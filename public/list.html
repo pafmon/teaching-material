@@ -1,0 +1,25 @@
+<h2>Contact List</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><input class="form-control" ng-model="newContact.name"/></td>
+            <td><input class="form-control" ng-model="newContact.phone"/></td>
+            <td><input class="form-control" ng-model="newContact.email"/></td>
+            <td><button class="button btn-primary" ng-click="addContact()">Add</button></td>
+        </tr>
+        <tr ng-repeat="contact in contacts">
+            <td><a href="#!/contact/{{contact.name}}">{{contact.name}}</a></td>
+            <td>{{contact.phone}}</td>
+            <td>{{contact.email}}</td>
+            <td><button class="button btn-danger" ng-click="deleteContact(contact.name)">Delete</button></td>
+        </tr>
+    </tbody>
+</table>

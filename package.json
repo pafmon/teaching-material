@@ -1,0 +1,30 @@
+{
+  "name": "teaching-sos1617",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "test/runPhantomjs.sh",
+    "test": "protractor test/config",
+    "posttest": "killall phantomjs",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pafmon/teaching-sos1617.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pafmon/teaching-sos1617/issues"
+  },
+  "homepage": "https://github.com/pafmon/teaching-sos1617#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "chai": "^4.1.2",
+    "express": "^4.15.2",
+    "helmet": "^3.5.0",
+    "nedb": "^1.8.0",
+    "newman": "^3.9.3"
+  }
+}

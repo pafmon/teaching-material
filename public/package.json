@@ -21,6 +21,7 @@
   "homepage": "https://github.com/pafmon/teaching-sos1617#readme",
   "dependencies": {
     "body-parser": "^1.17.1",
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "rand-token": "^0.4.0"
   }
 }

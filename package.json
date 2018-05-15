@@ -4,9 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "pretest": "test/runPhantomjs.sh",
-    "test": "protractor test/config",
-    "posttest": "killall phantomjs",
     "start": "node index.js"
   },
   "repository": {
